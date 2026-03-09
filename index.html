@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Study Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-box">
+
+<h1>Smart Study Planner</h1>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjtTGVzeJC8rhPmMFIAIYBXl1eO-0EPXsugWt-ZYf6Aya0E52PNyaK_g&s" class="login-logo">
+
+<input type="text" id="user" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+let u=document.getElementById("user").value
+let p=document.getElementById("pass").value
+
+if(u!="" && p!=""){
+window.location="dashboard.html"
+}
+else{
+alert("Enter username and password")
+}
+
+}
+
+</script>
+
+</body>
+</html>

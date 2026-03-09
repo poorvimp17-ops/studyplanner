@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Smart Study Planner</h1>
+
+<nav>
+
+<button onclick="showSection('task')">Daily Tasks</button>
+<button onclick="showSection('weekly')">Weekly Planner</button>
+<button onclick="showSection('monthly')">Monthly Planner</button>
+<button onclick="showSection('class')">Class Planner</button>
+<button onclick="showSection('homework')">Homework Planner</button>
+<button onclick="showSection('exam')">Exam Planner</button>
+
+</nav>
+
+</header>
+
+<!-- DAILY TASK -->
+
+<section id="task" class="section">
+
+<h2>Add Study Task</h2>
+
+<input id="subject" placeholder="Subject">
+<input id="taskName" placeholder="Study Task">
+<input id="deadline" placeholder="Deadline">
+
+<button onclick="addTask()">Add Task</button>
+
+<div class="counter">
+
+Total: <span id="total">0</span> |
+Completed: <span id="completed">0</span> |
+Remaining: <span id="remaining">0</span>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<!-- WEEKLY -->
+
+<section id="weekly" class="section">
+
+<h2>Weekly Planner</h2>
+
+<input id="weekInput" placeholder="Add Weekly Plan">
+<button onclick="addItem('weekInput','weekList')">Add</button>
+
+<ul id="weekList"></ul>
+
+</section>
+
+<!-- MONTHLY -->
+
+<section id="monthly" class="section">
+
+<h2>Monthly Planner</h2>
+
+<input id="monthInput" placeholder="Add Monthly Plan">
+<button onclick="addItem('monthInput','monthList')">Add</button>
+
+<ul id="monthList"></ul>
+
+</section>
+
+<!-- CLASS -->
+
+<section id="class" class="section">
+
+<h2>Class Planner</h2>
+
+<input id="classInput" placeholder="Add Class Task">
+<button onclick="addItem('classInput','classList')">Add</button>
+
+<ul id="classList"></ul>
+
+</section>
+
+<!-- HOMEWORK -->
+
+<section id="homework" class="section">
+
+<h2>Homework Planner</h2>
+
+<input id="homeInput" placeholder="Add Homework">
+<button onclick="addItem('homeInput','homeList')">Add</button>
+
+<ul id="homeList"></ul>
+
+</section>
+
+<!-- EXAM -->
+
+<section id="exam" class="section">
+
+<h2>Exam Study Planner</h2>
+
+<input id="examInput" placeholder="Add Exam Topic">
+<button onclick="addItem('examInput','examList')">Add</button>
+
+<ul id="examList"></ul>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
